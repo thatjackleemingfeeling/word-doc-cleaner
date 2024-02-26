@@ -1,3 +1,5 @@
+visualbasic
+
 Sub ConvertToInlineTextAndRemove()
     Dim Comment As Comment
     Dim hyperlink As hyperlink
