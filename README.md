@@ -14,6 +14,6 @@ Into something that looks like this:
  
     Here’s a piece<< google.com]] of science writing with some<< I’m not sure about this; can we look into it?]] fact checking notes in it
 
-To run it, read how to here:
+Read how to use VB here:
 
     https://www.process.st/how-to/open-microsoft-visual-basic-for-applications/
