@@ -17,3 +17,5 @@ Into something that looks like this:
 Read how to use VB here:
 
     https://www.process.st/how-to/open-microsoft-visual-basic-for-applications/
+
+(I'd like to get a version of this working with javascript/ google docs. This is harder than it sounds as I don't think there's an easy way to manipulate comment boxes in the scripting behind google docs.)
