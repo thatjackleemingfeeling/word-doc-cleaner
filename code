@@ -1,0 +1,27 @@
+Sub ConvertToInlineTextAndRemove()
+    Dim Comment As Comment
+    Dim hyperlink As hyperlink
+    Dim footnote As footnote
+
+    ' Transform and delete comments
+    For Each Comment In ActiveDocument.Comments
+        Comment.Scope.InsertAfter "<<" & Comment.Range.Text & "]] "
+        Comment.Delete
+    Next Comment
+
+    ' Transform hyperlinks
+    For Each hyperlink In ActiveDocument.Hyperlinks
+        hyperlink.Range.InsertAfter "<<" & hyperlink.Address & "]] "
+    Next hyperlink
+
+    ' Transform and delete footnotes
+    Dim i As Integer
+    For i = ActiveDocument.Footnotes.Count To 1 Step -1
+        With ActiveDocument.Footnotes(i)
+            .Reference.InsertAfter "<<" & .Range.Text & "]] "
+            .Delete
+        End With
+    Next i
+End Sub
+
+
